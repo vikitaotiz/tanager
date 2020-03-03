@@ -40,7 +40,7 @@
                                             {{$menu->description}}
                                         </div>
                                         <div>
-                                            <a href="tel:123456789" target="_blank" class="text_link">Make Your Order</a>
+                                            <a href="tel:123456789" target="_blank" class="text_link">Make Your Order &#9742;</a>
                                         </div>
                                     </div>
                                 @endforeach
