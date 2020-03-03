@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Categorymenu;
+use App\Menu;
 
 class PagezController extends Controller
 {
     public function menu()
     {
-        return view('pagez.menu');
+        $categorymenus = Categorymenu::all();
+
+        return view('pagez.menu', compact('categorymenus'));
     }
 
     public function about()
