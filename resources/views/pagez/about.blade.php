@@ -14,7 +14,7 @@
         <div class="wrapper">
             <div class="cta_contain">
                 <div class="cta_heading_subheading">
-                    <h3 class="h3 enlarged">Keep up to date with Gourmet.Burger.</h3>
+                    <h3 class="h3 enlarged">Keep up to date with Tanager.</h3>
                     <p class="paragraph _16px">Sign up to be the first to receive special news and event updates.</p>
                 </div>
                 <div class="form-block w-form">
