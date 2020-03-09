@@ -8,7 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(App\Menu::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence(2),
-        'image' => 'menu_images/flOtOVOiaGviiwNXji7pAfxwVWUQfpFsxJykJwdX.png',
         'description' => $faker->sentence(10),
         'price' => $faker->numberBetween($min = 100, $max = 1000),
         'categorymenu_id' => $faker->numberBetween($min = 1, $max = 5),
