@@ -22,6 +22,7 @@ Route::get('menu', 'PagezController@menu')->name('pagez.menu');
 Route::get('about', 'PagezController@about')->name('pagez.about');
 Route::get('contact', 'PagezController@contact')->name('pagez.contact');
 
+Route::resource('reservations', 'ReservationController');
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'UserController', ['except' => ['show']]);

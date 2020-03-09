@@ -22,7 +22,7 @@ Tip 2: you can also add an image using data-image tag
             <li class="nav-item @if($activePage == 'frontend') active @endif">
                 <a class="nav-link" href="{{route('frontend')}}">
                     <i class="nc-icon nc-single-copy-04"></i>
-                    <p>{{ __("Front End") }}</p>
+                    <p>{{ __("Front End (Menu)") }}</p>
                 </a>
             </li>
 
@@ -53,7 +53,12 @@ Tip 2: you can also add an image using data-image tag
                 </div>
             </li>
 
-
+            <li class="nav-item @if($activePage == 'reservations') active @endif">
+                <a class="nav-link" href="{{route('reservations.index')}}">
+                    <i class="nc-icon nc-paper-2"></i>
+                    <p>{{ __("Reservations") }}</p>
+                </a>
+            </li>
 
         </ul>
     </div>

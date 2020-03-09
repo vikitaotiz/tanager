@@ -136,6 +136,7 @@
             </div>
         </div>
 
+
 @include('layouts.frontpage_footer.footer_section')
 
 @include('layouts.frontpage_footer.footer')

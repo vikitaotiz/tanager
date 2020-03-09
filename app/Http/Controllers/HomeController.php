@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Reservation;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,9 @@ class HomeController extends Controller
     public function index()
     {
         $users = User::all();
+        $reservations_all = Reservation::all();
+        $reservations_today = Reservation::whereDate('created_at', today());
 
-        return view('dashboard', compact('users'));
+        return view('dashboard', compact('users', 'reservations_all', 'reservations_today'));
     }
 }

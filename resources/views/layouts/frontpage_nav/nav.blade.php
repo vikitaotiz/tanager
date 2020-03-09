@@ -12,7 +12,9 @@
     <meta content="summary" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="{{asset('tanager/css/style.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('tanager/js/webfont.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
@@ -33,7 +35,16 @@
     <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="Webclip.png" rel="apple-touch-icon" />
 
-</head>
+    @toastr_css
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <style>
+        .modal {
+            position: relative;
+            overflow-y: scroll;
+        }
+    </style>
 
 <body class="body">
     <div data-w-id="d93c577b-eacd-0a62-04dc-7ed928edbac1" class="page_wrap">
@@ -49,7 +60,7 @@
 
                     <a href="{{route('pagez.contact')}}" class="nav_link w-nav-link">Contact</a>
 
-                    <a href="#" target="_blank" class="button nav_button w-button">Reserve Table</a>
+                    <a href="#" target="_blank" class="button nav_button w-button" data-toggle="modal" data-target="#reservationModal" >Reserve Table</a>
                     <a href="{{route('login')}}" target="_blank" class="nav_link w-nav-link">Admin</a>
                 </nav>
                 <div class="menu-button w-nav-button">

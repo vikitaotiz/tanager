@@ -1,3 +1,116 @@
+<!-- Modal -->
+<div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background: #AB8D69;">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: #fff;">Create Table Reservation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <form method="post" action="{{ route('reservations.store') }}">
+                @csrf
+
+                <div class="pl-lg-4">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group{{ $errors->has('first_name') ? ' has-danger' : '' }}">
+                                <label class="form-control-label" for="input-first_name">
+                                    {{ __('First Name') }}
+                                </label>
+                                <input type="text" name="first_name" id="input-first_name" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" placeholder="{{ __('First Name') }}" value="{{ old('first_name') }}" required autofocus>
+                                @include('alerts.feedback', ['field' => 'first_name'])
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group{{ $errors->has('last_name') ? ' has-danger' : '' }}">
+                                <label class="form-control-label" for="input-last_name">
+                                    {{ __('Last Name') }}
+                                </label>
+                                <input type="text" name="last_name" id="input-last_name" class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" placeholder="{{ __('Last Name') }}" value="{{ old('last_name') }}" required autofocus>
+                                @include('alerts.feedback', ['field' => 'last_name'])
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
+                                <label class="form-control-label" for="input-phone">
+                                    {{ __('Phone') }}
+                                </label>
+                                <input type="text" name="phone" id="input-phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="{{ __('Phone') }}" value="{{ old('phone') }}" required autofocus>
+                                @include('alerts.feedback', ['field' => 'phone'])
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            {{-- <div class="form-group{{ $errors->has('reservation_date') ? ' has-danger' : '' }}">
+                                <label class="form-control-label" for="input-reservation_date">
+                                    {{ __('Date') }}
+                                </label>
+                                <input type="datetime" name="reservation_date" id="input-reservation_date" class="reservation_date form-control{{ $errors->has('reservation_date') ? ' is-invalid' : '' }}" data-provide="datepicker"  placeholder="{{ __('Reservation Date') }}" value="{{ old('reservation_date') }}" required autofocus>
+                                @include('alerts.feedback', ['field' => 'reservation_date'])
+                            </div> --}}
+
+
+                            <div class="form-group">
+                                <label for="dtp_input1" class="form-control-label">Date and Time</label>
+                                <div class="input-group date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy MM dd- HH:ii" data-link-field="dtp_input1">
+                                    <input name="reservation_date" class="form-control form_datetime"  type="text" id="form_datetime" placeholder="{{ __('Reservation Date') }}" value="{{ old('reservation_date') }}" required autofocus>
+                                </div>
+                                <input type="hidden" id="dtp_input1" value=""><br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group{{ $errors->has('no_of_people') ? ' has-danger' : '' }}">
+                                <label class="form-control-label" for="input-first_name">
+                                    {{ __('Number of People') }}
+                                </label>
+                                <input type="number" name="no_of_people" id="input-no_of_people" class="form-control{{ $errors->has('no_of_people') ? ' is-invalid' : '' }}" placeholder="{{ __('Number of People') }}" value="{{ old('no_of_people') }}" required autofocus>
+                                @include('alerts.feedback', ['field' => 'first_no_of_people'])
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                                <label class="form-control-label">
+                                    {{ __('Email (Optional)') }}
+                                </label>
+                                <input type="text" name="email" class="form-control" placeholder="{{ __('Email') }}" value="{{ old('email') }}" >
+                        </div>
+                    </div>
+
+                    <div class="row m-1">
+                        <label class="form-control-label">
+                            {{ __('More Information (Optional)') }}
+                        </label>
+                        <textarea name="more_info" class="form-control" placeholder="{{ __('More Information') }}" >
+                            {{ old('more_info') }}
+                        </textarea>
+                    </div><hr>
+
+                    <div class="">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-primary">{{ __('Create Reservation') }}</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <div class="footer_wrapper div-block-11">
     <div id="footer" class="section footer_section">
         <div class="wrapper">
@@ -58,9 +171,21 @@
     </div>
 </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> --}}
+<script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('tanager/js/webflow.js')}}" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+<script>
+
+    flatpickr('#form_datetime', {
+        enableTime: true,
+        dateFormat: "Y-m-d H:i",
+    });
+
+</script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -75,6 +200,9 @@
     })();
 </script>
 <!--End of Tawk.to Script-->
+
+@toastr_js
+@toastr_render
 
 </body>
 
