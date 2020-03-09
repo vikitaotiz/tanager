@@ -71,6 +71,8 @@ class MenuController extends Controller
             $menu->save();
         }
 
+        toastr()->success('Menu has been created successfully!');
+
         return redirect()->route('menus.show', $menu->id);
 
     }
@@ -144,6 +146,8 @@ class MenuController extends Controller
 
             $menu->save();
         }
+
+        toastr()->success('Menu has been updated successfully!');
 
         return redirect()->route('menus.show', $menu->id);
     }
