@@ -55,6 +55,7 @@
                 </a>
 
                 <nav role="navigation" class="nav-menu w-nav-menu">
+                    <a href="/" class="nav_link w-nav-link">Home</a>
                     <a href="{{route('pagez.menu')}}" class="nav_link w-nav-link">Menu</a>
                     <a href="{{route('pagez.about')}}" class="nav_link w-nav-link">About Us</a>
 
