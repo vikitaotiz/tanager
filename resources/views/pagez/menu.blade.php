@@ -30,7 +30,11 @@
                                 @foreach ($category->menus as $menu)
                                     <div class="menu_item" style="border:1px solid #AB8D69; padding: 4%; border-radius: 3px;">
                                         <div>
-                                            <img src="{{asset('tanager/images/burger.png')}}" alt="">
+                                            @if ($menu->image)
+                                                <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="100%" height="350">
+                                            @else
+                                                <img src="{{asset('tanager/images/burger.png')}}" alt="Sample Image">
+                                            @endif
                                         </div>
                                         <div class="name_and_price_wrap">
                                             <div class="menu_item_name">{{$menu->title}}</div>
