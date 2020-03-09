@@ -33,7 +33,7 @@
                                             @if ($menu->image)
                                                 <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="100%" height="350">
                                             @else
-                                                <img src="{{asset('tanager/images/burger.png')}}" alt="Sample Image">
+                                                <h5>Image not provided</h5>
                                             @endif
                                         </div>
                                         <div class="name_and_price_wrap">
