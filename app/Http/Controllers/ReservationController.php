@@ -137,4 +137,37 @@ class ReservationController extends Controller
 
         return redirect()->route('reservations.index');
     }
+
+    public function confirm($id)
+    {
+        Reservation::whereId($id)->update([
+            'confirm' => 1
+        ]);
+
+        toastr()->success('Reservation has been confirmed successfully!');
+
+        return redirect()->back();
+    }
+
+    public function close($id)
+    {
+        Reservation::whereId($id)->update([
+            'status' => 1
+        ]);
+
+        toastr()->success('Reservation has been closed successfully!');
+
+        return redirect()->back();
+    }
+
+    public function cancel($id)
+    {
+        Reservation::whereId($id)->update([
+            'cancel' => 1
+        ]);
+
+        toastr()->success('Reservation has been cancelled successfully!');
+
+        return redirect()->back();
+    }
 }

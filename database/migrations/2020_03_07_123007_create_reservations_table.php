@@ -22,6 +22,11 @@ class CreateReservationsTable extends Migration
             $table->integer('no_of_people');
             $table->string('email')->nullable();
             $table->text('more_info')->nullable();
+
+            $table->boolean('status')->default(0);
+            $table->boolean('confirm')->default(0);
+            $table->boolean('cancel')->default(0);
+
             $table->timestamps();
         });
     }

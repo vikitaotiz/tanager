@@ -8,7 +8,7 @@ class Reservation extends Model
 {
     protected $guarded = [];
 
-    protected $dates = ['reservation_date'];
+    protected $dates = ['reservation_date', 'created_at'];
 
     protected $dateFormat = 'Y-m-d H:i';
 }

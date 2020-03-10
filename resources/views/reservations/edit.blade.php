@@ -82,14 +82,14 @@
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row m-1">
                                     <label class="form-control-label">
                                         {{ __('More Information (Optional)') }}
                                     </label>
                                     <textarea name="more_info" cols="30" rows="10" class="form-control" placeholder="{{ __('More Information') }}" >
                                         {{ $reservation->more_info }}
                                     </textarea>
-                                </div>
+                                </div><hr>
 
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary btn-block">{{ __('Update Reservation') }}</button>

@@ -36,6 +36,10 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('users', 'UserController@index')->name('users.index');
 
+    Route::get('confirm/{id}', 'ReservationController@confirm')->name('confirm.reservation');
+    Route::get('close/{id}', 'ReservationController@close')->name('close.reservation');
+    Route::get('cancel/{id}', 'ReservationController@cancel')->name('cancel.reservation');
+
 	Route::get('{page}', ['as' => 'page.index', 'uses' => 'PageController@index']);
 });
 

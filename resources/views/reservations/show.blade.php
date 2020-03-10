@@ -23,7 +23,7 @@
                                 <form action="{{route('reservations.destroy', $reservation->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <input type="submit" value="Remove Reservation" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">
+                                    <input type="submit" value="Delete Reservation" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">
                                 </form>
                             </div>
                         </div><hr>
@@ -32,6 +32,9 @@
 
                         <div>
                             <ul class="list-group">
+                                <li class="list-group-item">
+                                    <strong>Reference Number (Ref No.): </strong> #{{$reservation->id}}
+                                </li>
                                 <li class="list-group-item">
                                     <strong>Name : </strong> {{$reservation->first_name}} {{$reservation->last_name}}
                                 </li>
@@ -55,6 +58,41 @@
                         <div class="row" style="padding: 2%;">
                             <p>{{$reservation->description}}</p>
                         </div>
+
+                    </div>
+                    <div class="row card-footer" style="background: #9967DB;">
+                            <div class="col-md-3 text-white">
+                                <strong>Status : </strong>
+                                @if ($reservation->status == 0)
+                                    Open
+                                @else
+                                    Closed
+                                @endif
+                            </div>
+                            <div class="col-md-3">
+                                @if ($reservation->confirm == 0)
+                                    <a href="{{route('confirm.reservation', $reservation->id)}}" class="btn btn-warning" onclick="return confirm('Are you sure?')">
+                                        Confirm Reservation
+                                    </a>
+                                @else
+                                    <strong class="text-white">Table Reservation Confirmed</strong>
+                                @endif
+
+                            </div>
+                            <div class="col-md-3">
+                                @if ($reservation->status == 0)
+                                    <a href="{{route('close.reservation', $reservation->id)}}" class="btn btn-warning" onclick="return confirm('Are you sure?')">
+                                        Close Reservation
+                                    </a>
+                                @endif
+                            </div>
+                            <div class="col-md-3">
+                                @if ($reservation->status == 0)
+                                    <a href="{{route('cancel.reservation', $reservation->id)}}" class="btn btn-warning" onclick="return confirm('Are you sure?')">
+                                        Cancel Reservation
+                                    </a>
+                                @endif
+                            </div>
                     </div>
                 </div>
             </div>

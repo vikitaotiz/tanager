@@ -23,17 +23,20 @@
 
                         @if ($reservations->count() > 0)
                             <div class="card-body table-full-width table-responsive">
-                                <table class="table table-hover table-striped" id="reservations_table">
+                                <table class="table table-bordered" id="reservations_table">
                                     <thead>
+                                        <th>Ref No.</th>
                                         <th>Name</th>
                                         <th>Phone</th>
                                         <th>Date</th>
                                         <th>No. of people</th>
+                                        <th>Status</th>
                                         <th>Created On</th>
                                     </thead>
                                     <tbody>
                                         @foreach ($reservations as $reservation)
                                             <tr>
+                                                <td>#{{$reservation->id}}</td>
                                                 <td>
                                                     <a href="{{route('reservations.show', $reservation->id)}}">
                                                         {{$reservation->first_name}} {{$reservation->last_name}}
@@ -42,6 +45,13 @@
                                                 <td>{{$reservation->phone}}</td>
                                                 <td>{{$reservation->reservation_date->format('d M Y H:i')}}</td>
                                                 <td>{{$reservation->no_of_people}}</td>
+                                                <td>
+                                                    @if ($reservation->status == 0)
+                                                      Open
+                                                    @else
+                                                        Closed
+                                                    @endif
+                                                </td>
                                                 <td>#</td>
                                             </tr>
                                         @endforeach

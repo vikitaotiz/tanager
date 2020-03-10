@@ -9,7 +9,7 @@
                     <div class="menu_links_wrap">
                         @if ($categorymenus->count() > 0)
                             @foreach ($categorymenus as $category)
-                                <a href="#{{$category->title}}" class="menu_nav_link">{{$category->title}}</a>
+                               <a href="#{{$category->title}}" class="menu_nav_link">{{$category->title}}</a>
                             @endforeach
                         @else
                             <h3>No Menu Category Item Created.</h3>
@@ -31,7 +31,7 @@
                                     <div class="menu_item" style="border:1px solid #AB8D69; padding: 4%; border-radius: 3px;">
                                         <div>
                                             @if ($menu->image)
-                                                <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="100%" height="200">
+                                                <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="95%" height="200">
                                             @else
                                                 <h5>Image not provided</h5>
                                             @endif
