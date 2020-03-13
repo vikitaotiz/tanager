@@ -112,7 +112,7 @@
                     <div class="footer_heading">&#9930;: Locations</div>
                     <div class="w-layout-grid locations_grid">
                         <div class="location_wrap">
-                            <a href="https://goo.gl/maps/n96hmgh4XtSZz5qE8" class="email_link" target="_blank">
+                            <a href="https://goo.gl/maps/eXqb6dXZ24ZWtmm69" class="email_link" target="_blank">
                                 <div class="city">NAIROBI, KENYA.</div>
                                 <div class="address">Central Business District
                                 <br/>Kaunda Street</div>
