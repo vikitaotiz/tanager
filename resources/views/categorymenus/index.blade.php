@@ -23,7 +23,7 @@
 
                         @if ($categorymenus->count() > 0)
                             <div class="card-body table-full-width table-responsive">
-                                <table class="table table-hover table-striped">
+                                <table class="table table-bordered" id="categorymenus_table">
                                     <thead>
                                         <th>Menu Category Title</th>
                                         <th>Created By</th>

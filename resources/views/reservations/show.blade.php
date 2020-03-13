@@ -55,9 +55,15 @@
                             </ul>
                         </div>
 
-                        <div class="row" style="padding: 2%;">
-                            <p>{{$reservation->description}}</p>
-                        </div>
+                        @if ($reservation->more_info)
+                            <hr>
+                                <h3>More Information</h3>
+                            <hr>
+                            <div class="row" style="padding: 2%;">
+                                <p>{!!$reservation->more_info!!}</p>
+                            </div>
+                        @endif
+
 
                     </div>
                     <div class="row card-footer" style="background: #9967DB;">

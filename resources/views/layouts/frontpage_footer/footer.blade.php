@@ -85,7 +85,7 @@
                             {{ __('More Information (Optional)') }}
                         </label>
 
-                        <input id="menu1_description" type="hidden" name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" placeholder="{{ __('Menu Descritpion') }}" required autofocus>
+                        <input id="menu1_description" type="hidden" name="more_info" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" placeholder="{{ __('Menu Descritpion') }}" required autofocus>
                         <trix-editor input="menu1_description"></trix-editor>
 
                     </div><hr>
@@ -115,9 +115,9 @@
                             <div class="city">NAIROBI, KENYA.</div>
                             <div class="address">Central Business District
                                 <br/>Kaunda Street</div>
-                            <div class="contact">555-876-566</div>
+                            <div class="contact">{{env('APP_PHONE')}}</div>
                             <div class="email less_top_padding">
-                                <a href="mailto:info@tanager.com" class="email_link">info@tanager.com</a></div>
+                                <a href="mailto:{{env('APP_EMAIL')}}" class="email_link">{{env('APP_EMAIL')}}</a></div>
                         </div>
 
                     </div>
@@ -143,13 +143,13 @@
                     </a>
                     <a href="mailto:info@tanager.com?subject=Gourmet%20Burger%20Table%20Booking" class="email">info@tanager.com</a>
                     <div class="sm_icons_wrap">
-                        <a href="https://facebook.com/" target="_blank" class="sm_link first-link w-inline-block">
+                        <a href="{{env('APP_FACEBOOK')}}" target="_blank" class="sm_link first-link w-inline-block">
                             <img src="{{asset('tanager/images/facebook.png')}}" width="15" alt="" />
                         </a>
-                        <a href="http://instagram.com/" target="_blank" class="sm_link w-inline-block">
+                        <a href="{{env('APP_INSTAGRAM')}}" target="_blank" class="sm_link w-inline-block">
                             <img src="{{asset('tanager/images/instagram.png')}}" width="15" sizes="(max-width: 767px) 15px, (max-width: 991px) 2vw, 15px" alt="" />
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="sm_link w-inline-block">
+                        <a href="{{env('APP_TWITTER')}}" target="_blank" class="sm_link w-inline-block">
                             <img src="{{asset('tanager/images/twitter.png')}}" width="17" alt="" />
                         </a>
                     </div>

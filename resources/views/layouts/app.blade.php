@@ -91,6 +91,9 @@
     <script>
         $(document).ready(function() {
             $('#reservations_table').DataTable();
+            $('#menus_table').DataTable();
+            $('#categorymenus_table').DataTable();
+            $('#users_table').DataTable();
 
             $('#categorymenu').select2();
         });
