@@ -28,7 +28,7 @@
                             <div class="w-layout-grid menu_grid">
                             @if ($category->menus->count() > 0)
                                 @foreach ($category->menus as $menu)
-                                    <div class="menu_item" style="border:1px solid #AB8D69; padding: 4%; border-radius: 3px;">
+                                    <div class="menu_item" style="border:1px solid #AB8D69; padding: 3%; border-radius: 3px;">
                                         <div>
                                             @if ($menu->image)
                                                 <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="95%" height="200">
@@ -41,7 +41,7 @@
                                             <div class="menu_price">Kshs{{$menu->price}}</div>
                                         </div>
                                         <div class="menu_item_description max_w_400px">
-                                            {{$menu->description}}
+                                            {!!$menu->description!!}
                                         </div>
                                         <div>
                                             <a href="tel:123456789" target="_blank" class="text_link">Make Your Order &#9742;</a>

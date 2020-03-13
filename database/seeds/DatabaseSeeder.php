@@ -13,8 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([UsersTableSeeder::class]);
 
-        factory(App\Categorymenu::class, 5)->create();
+        $this->call([CategorymenusTableSeeder::class]);
 
-        factory(App\Menu::class, 50)->create();
     }
 }

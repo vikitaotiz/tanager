@@ -29,14 +29,18 @@
                         </div><hr>
                     </div>
                     <div class="card-body" style="padding: 2%;">
-
-                        @if ($menu->image)
-                            <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="100%" height="350">
-                        @else
-                            <h5>Image not provided</h5>
-                        @endif
+                        <div>
+                            @if ($menu->image)
+                                <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="100%" height="350">
+                            @else
+                                <h5>Image not provided</h5>
+                            @endif
+                        </div><hr>
+                        <h4>
+                            Menu Description
+                        </h4><hr>
                         <div class="row" style="padding: 2%;">
-                            <p>{{$menu->description}}</p>
+                            <p>{!!$menu->description!!}</p>
                         </div><hr>
                         <div class="row">
                             <div class="col-sm-4">

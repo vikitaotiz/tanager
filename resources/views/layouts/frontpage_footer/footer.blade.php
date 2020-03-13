@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header" style="background: #AB8D69;">
           <h5 class="modal-title" id="exampleModalLabel" style="color: #fff;">Create Table Reservation</h5>
@@ -49,14 +49,6 @@
                         </div>
 
                         <div class="col-md-6">
-                            {{-- <div class="form-group{{ $errors->has('reservation_date') ? ' has-danger' : '' }}">
-                                <label class="form-control-label" for="input-reservation_date">
-                                    {{ __('Date') }}
-                                </label>
-                                <input type="datetime" name="reservation_date" id="input-reservation_date" class="reservation_date form-control{{ $errors->has('reservation_date') ? ' is-invalid' : '' }}" data-provide="datepicker"  placeholder="{{ __('Reservation Date') }}" value="{{ old('reservation_date') }}" required autofocus>
-                                @include('alerts.feedback', ['field' => 'reservation_date'])
-                            </div> --}}
-
 
                             <div class="form-group">
                                 <label for="dtp_input1" class="form-control-label">Date and Time</label>
@@ -88,13 +80,14 @@
                         </div>
                     </div>
 
-                    <div class="row m-1">
+                    <div>
                         <label class="form-control-label">
                             {{ __('More Information (Optional)') }}
                         </label>
-                        <textarea name="more_info" class="form-control" placeholder="{{ __('More Information') }}" >
-                            {{ old('more_info') }}
-                        </textarea>
+
+                        <input id="menu1_description" type="hidden" name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" placeholder="{{ __('Menu Descritpion') }}" required autofocus>
+                        <trix-editor input="menu1_description"></trix-editor>
+
                     </div><hr>
 
                     <div class="">
@@ -175,6 +168,8 @@
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('tanager/js/webflow.js')}}" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="{{asset('js/trix.js')}}"></script>
+
 
 <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 
@@ -203,6 +198,7 @@
 
 @toastr_js
 @toastr_render
+
 
 </body>
 

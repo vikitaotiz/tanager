@@ -35,11 +35,11 @@
                             <div class="card bg-success" style="color: #fff;">
                                  <div class="card-body">
                                      <div class="row">
-                                         <div class="col-6">
+                                         <div class="col-8">
                                              <strong style="font-size: 2em;">Table Reservations Made Today</strong>
                                          </div>
 
-                                         <div class="col-6">
+                                         <div class="col-4">
                                              <i class="nc-icon nc-paper-2" style="font-size: 5em;"></i>
                                          </div>
 
@@ -62,11 +62,11 @@
                             <div class="card bg-success" style="color: #fff;">
                                  <div class="card-body">
                                      <div class="row">
-                                         <div class="col-6">
+                                         <div class="col-8">
                                              <strong style="font-size: 2em;">All Table Reservations</strong>
                                          </div>
 
-                                         <div class="col-6">
+                                         <div class="col-4">
                                              <i class="nc-icon nc-paper-2" style="font-size: 5em;"></i>
                                          </div>
 

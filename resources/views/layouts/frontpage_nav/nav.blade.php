@@ -38,6 +38,7 @@
     @toastr_css
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="{{asset('css/trix.css')}}"></link>
 
     <style>
         .modal {
@@ -45,6 +46,7 @@
             overflow-y: scroll;
         }
     </style>
+
 
 <body class="body">
     <div data-w-id="d93c577b-eacd-0a62-04dc-7ed928edbac1" class="page_wrap">
