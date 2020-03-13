@@ -148,6 +148,10 @@
                         <a href="{{env('APP_FACEBOOK')}}" target="_blank" class="sm_link first-link w-inline-block">
                             <img src="{{asset('tanager/images/facebook.png')}}" width="15" alt="" />
                         </a>
+
+                        <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="sm_link first-link w-inline-block">
+                            <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                        </a>
                         <a href="{{env('APP_INSTAGRAM')}}" target="_blank" class="sm_link w-inline-block">
                             <img src="{{asset('tanager/images/instagram.png')}}" width="15" sizes="(max-width: 767px) 15px, (max-width: 991px) 2vw, 15px" alt="" />
                         </a>
