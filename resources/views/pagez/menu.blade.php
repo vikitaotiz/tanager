@@ -44,7 +44,7 @@
                                             {!!$menu->description!!}
                                         </div>
                                         <div>
-                                            <a href="tel:{{env('APP_PHONE')}}" target="_blank" class="text_link">Make Your Order &#9742;</a>
+                                            <a href="tel:{{env('APP_PHONE')}}" class="text_link">Make Your Order &#9742;</a>
                                         </div>
                                     </div>
                                 @endforeach

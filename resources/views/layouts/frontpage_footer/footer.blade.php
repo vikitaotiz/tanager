@@ -115,7 +115,9 @@
                             <div class="city">NAIROBI, KENYA.</div>
                             <div class="address">Central Business District
                                 <br/>Kaunda Street</div>
-                            <div class="contact">{{env('APP_PHONE')}}</div>
+                            <div class="contact">
+                                <a href="tel:{{env('APP_PHONE')}}" class="text_link">{{env('APP_PHONE')}}</a>
+                            </div>
                             <div class="email less_top_padding">
                                 <a href="mailto:{{env('APP_EMAIL')}}" class="email_link">{{env('APP_EMAIL')}}</a></div>
                         </div>
