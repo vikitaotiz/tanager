@@ -28,7 +28,7 @@
                             <div class="w-layout-grid menu_grid">
                             @if ($category->menus->count() > 0)
                                 @foreach ($category->menus as $menu)
-                                    <div class="menu_item" style="border:1px solid #AB8D69; padding: 3%; border-radius: 3px;">
+                                    <div class="menu_item" style="border:1px solid #AB8D69; padding: 2%; border-radius: 3px;">
                                         <div>
                                             @if ($menu->image)
                                                 <img src="{{asset('storage/'.$menu->image)}}" alt="{{$menu->title}}" width="95%" height="200">
