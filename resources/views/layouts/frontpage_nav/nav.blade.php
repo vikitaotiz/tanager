@@ -49,22 +49,14 @@
         #myBtn {
             display: none;
             position: fixed;
-            bottom: 20px;
-            right: 100px;
+            bottom: 50px;
+            right: 40%;
             z-index: 99;
             font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: #02001B;
-            color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+
         }
 
-        #myBtn:hover {
-            background-color: #555;
-        }
     </style>
 
 

@@ -170,7 +170,7 @@
         <div class="wrapper">
 
             <div class="copyright">&copy; Copyright Tanager 2020.
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Back To The Top</button>
+                <a onclick="topFunction()" id="myBtn" title="Go to top" class="text_link">Go To Top</a>
             </div>
         </div>
     </div>
