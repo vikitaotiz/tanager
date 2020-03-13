@@ -7,7 +7,12 @@
                     <div class="hero_h_wrap">
                         <h1 class="h1 center_on_tablet_exception">Tanager. The way food should be. </h1>
                         <p class="paragraph hero_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                        <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Make Your Order</a>
+                        <p>
+                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                            </a>
+                        </p>
                     </div>
                     <div class="hero_images_contain">
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" data-w-id="545ab9f0-4fbf-2d7a-6412-a0f68ae88154" alt="" class="scattered_salt_image" />
@@ -58,16 +63,24 @@
                     <div>
                         <h3 class="h3">Appetizers </h3>
                         <p class="paragraph max_w_300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum </p>
-                        <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Make Your Order</a>
-
+                        <p>
+                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                            </a>
+                        </p>
                     </div>
                     <div id="w-node-c1de7c334a42-677eebb4" class="div-block-2">
                         <h3 class="h3">Main Dishes</h3>
                         <p class="paragraph max_w_300px">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
                         </p>
-                        <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Make Your Order</a>
-
+                        <p>
+                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                            </a>
+                        </p>
                     </div>
                     <div id="w-node-c1de7c334a47-677eebb4" class="relative_div_block">
                         <img src="{{asset('tanager/images/main_dish.png')}}" width="423" alt="" class="main_dish_image" />
@@ -82,14 +95,22 @@
                     <div>
                         <h3 class="h3">Side Dishes</h3>
                         <p class="paragraph max_w_300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum </p>
-                        <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Make Your Order</a>
-
+                        <p>
+                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                            </a>
+                        </p>
                     </div>
                     <div id="w-node-c1de7c334a54-677eebb4" class="div-block-3">
                         <h3 class="h3">Desserts</h3>
                         <p class="paragraph max_w_300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius </p>
-                        <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Make Your Order</a>
-
+                        <p>
+                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                            </a>
+                        </p>
                     </div>
                     <div id="w-node-c1de7c334a59-677eebb4" class="relative_div_block">
                         <img src="{{asset('tanager/images/dessert.png')}}" width="273" alt="" class="dessert_image" />

@@ -109,17 +109,20 @@
         <div class="wrapper">
             <div class="w-layout-grid footer_grid">
                 <div class="locations_contain">
-                    <div class="footer_heading">Locations</div>
+                    <div class="footer_heading">&#9930;: Locations</div>
                     <div class="w-layout-grid locations_grid">
                         <div class="location_wrap">
-                            <div class="city">NAIROBI, KENYA.</div>
-                            <div class="address">Central Business District
+                            <a href="https://goo.gl/maps/n96hmgh4XtSZz5qE8" class="email_link" target="_blank">
+                                <div class="city">NAIROBI, KENYA.</div>
+                                <div class="address">Central Business District
                                 <br/>Kaunda Street</div>
+                            </a>
+
                             <div class="contact">
-                                <a href="tel:{{env('APP_PHONE')}}" class="text_link">{{env('APP_PHONE')}}</a>
+                                <a href="tel:{{env('APP_PHONE')}}" class="email_link">&#9742;: {{env('APP_PHONE')}}</a>
                             </div>
                             <div class="email less_top_padding">
-                                <a href="mailto:{{env('APP_EMAIL')}}" class="email_link">{{env('APP_EMAIL')}}</a></div>
+                                <a href="mailto:{{env('APP_EMAIL')}}" class="email_link">&#9993;: {{env('APP_EMAIL')}}</a></div>
                         </div>
 
                     </div>
@@ -165,7 +168,10 @@
     </div>
     <div class="copyrights_wrap">
         <div class="wrapper">
-            <div class="copyright">&copy; Copyright Tanager 2020.</div>
+
+            <div class="copyright">&copy; Copyright Tanager 2020.
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Back To The Top</button>
+            </div>
         </div>
     </div>
 </div>
@@ -185,6 +191,26 @@
         enableTime: true,
         dateFormat: "Y-m-d H:i",
     });
+
+    //Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
 
 </script>
 

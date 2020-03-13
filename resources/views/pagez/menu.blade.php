@@ -44,7 +44,12 @@
                                             {!!$menu->description!!}
                                         </div>
                                         <div>
-                                            <a href="tel:{{env('APP_PHONE')}}" class="text_link">Make Your Order &#9742;</a>
+                                            <p>
+                                                <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
+                                                <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                                    <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                 @endforeach
