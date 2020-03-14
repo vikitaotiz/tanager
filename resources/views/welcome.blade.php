@@ -165,7 +165,7 @@
                 <h3 class="h3">Enjoy</h3>
                 <h2 class="h2">Our High Quality Ingredients</h2>
                 <p class="paragraph centered_p max_w_600px">
-                    We endeavour prepare our meals using natural, fresh and healthy food ingredients to ensure quality.
+                    We endeavour to prepare our meals using natural, fresh and healthy food ingredients to ensure quality.
                 </p>
                 <div class="ingredients_image_wrap">
                     <div class="left_side_ingredients">
