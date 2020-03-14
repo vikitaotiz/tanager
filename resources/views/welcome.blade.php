@@ -62,7 +62,7 @@
                         <p class="paragraph max_w_400px">
                             We have a variety of meals to ensure that each of our customer is happy and fully satisfied.
                             Below is a small list of our meals. We highly encourage you to head over to our <a href="{{route('pagez.menu')}}" class="email_link">menu page </a>
-                            for full the menu.
+                            for the full menu.
                         </p>
                     </div>
                     <div id="w-node-c1de7c334a39-677eebb4" class="relative_div_block">
