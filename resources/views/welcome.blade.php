@@ -5,8 +5,10 @@
             <div class="wrapper">
                 <div class="hero_content">
                     <div class="hero_h_wrap">
-                        <h1 class="h1 center_on_tablet_exception">Tanager. The way food should be. </h1>
-                        <p class="paragraph hero_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <h1 class="h1 center_on_tablet_exception"><span style="color: #AB8D69;">Tanager.</span> Home of Delicious meals!. </h1>
+                        <p class="paragraph hero_p">
+                           @include('menus.burgers')
+                        </p>
                         <p>
                             <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
                             <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
@@ -40,7 +42,11 @@
                             <img src="{{asset('tanager/images/scattered_salt.png')}}" width="353" data-w-id="c6e4afa8-ccc0-5906-9987-7073a957e3ea" alt="" class="bg_salt_image" />
                             <h3 class="h3">Learn More</h3>
                             <h2 class="h2 dark_h2">About Us</h2>
-                            <p class="paragraph dark_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. </p>
+                            <p class="paragraph dark_p">
+                                We are a team dedicated to providing you incredible taste at a modest price point in a welcoming and stylish atmosphere,
+                                We are constantly working to ensure better food, prepared from whole and fresh ingredients is accessible to everyone...
+
+                            </p>
                             <a href="{{route('pagez.about')}}" class="text_link">Read Our Story  <span class="arrow">↠</span></a>
                             <div class="card_right_images_contain"></div>
                         </div>
@@ -51,18 +57,24 @@
                 <div class="w-layout-grid discover_menu_grid">
                     <div id="w-node-c1de7c334a31-677eebb4">
                         <h3 class="h3 align_right">Review</h3>
-                        <h2 class="h2 align_right">Our Full Menu</h2></div>
+                        <h2 class="h2 align_right">Overview</h2></div>
                     <div class="div-block">
-                        <p class="paragraph max_w_400px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
+                        <p class="paragraph max_w_400px">
+                            We have a variety of meals to ensure that each of our customer is happy and fully satisfied.
+                            Below is a small list of our meals. We highly encourage you to head over to our <a href="{{route('pagez.menu')}}" class="email_link">menu page </a>
+                            for full the menu.
+                        </p>
                     </div>
                     <div id="w-node-c1de7c334a39-677eebb4" class="relative_div_block">
-                        <img src="{{asset('tanager/images/fe_fries.png')}}" width="326" alt="" class="appitizer_image" />
+                        <img src="{{asset('tanager/images/pizza.png')}}" width="326" alt="" class="appitizer_image" />
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" width="272" data-w-id="c6a7da8e-3471-b7c2-2090-c1de7c334a3b" style="opacity:0" alt="" class="appitizer_salt appitizer_salt_2" />
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" width="272" data-w-id="c6a7da8e-3471-b7c2-2090-c1de7c334a3c" style="opacity:0" alt="" class="appitizer_salt" />
                     </div>
                     <div>
-                        <h3 class="h3">Appetizers </h3>
-                        <p class="paragraph max_w_300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum </p>
+                        <h3 class="h3">Pizzas </h3>
+                        <p class="paragraph max_w_300px">
+                           @include('menus.pizzas')
+                        </p>
                         <p>
                             <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
                             <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
@@ -71,9 +83,11 @@
                         </p>
                     </div>
                     <div id="w-node-c1de7c334a42-677eebb4" class="div-block-2">
-                        <h3 class="h3">Main Dishes</h3>
+                        <h3 class="h3">Somali Taste</h3>
                         <p class="paragraph max_w_300px">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                            This is a fusion of different traditions, with some East African, Arab, Turkish,
+                            Indian and Italian influences. It is the product of Somalia's tradition of trade.
+                            @include('menus.somali_taste')
                         </p>
                         <p>
                             <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
@@ -83,18 +97,21 @@
                         </p>
                     </div>
                     <div id="w-node-c1de7c334a47-677eebb4" class="relative_div_block">
-                        <img src="{{asset('tanager/images/main_dish.png')}}" width="423" alt="" class="main_dish_image" />
+                        <img src="{{asset('tanager/images/somali_taste.png')}}" width="423" alt="" class="main_dish_image" />
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" data-w-id="c6a7da8e-3471-b7c2-2090-c1de7c334a49" style="opacity:0" alt="" class="main_dish_salt main_dish_salt_2" />
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" data-w-id="c6a7da8e-3471-b7c2-2090-c1de7c334a4a" style="opacity:0" alt="" class="main_dish_salt" />
                     </div>
                     <div id="w-node-c1de7c334a4b-677eebb4" class="relative_div_block">
-                        <img src="{{asset('tanager/images/salad.png')}}" width="355" alt="" class="side_dish_image" />
+                        <img src="{{asset('tanager/images/main_dish.png')}}" width="355" alt="" class="side_dish_image" />
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" data-w-id="c6a7da8e-3471-b7c2-2090-c1de7c334a4d" style="opacity:0" alt="" class="side_dish_salt saide_dish_salt_2" />
                         <img src="{{asset('tanager/images/scattered_salt.png')}}" data-w-id="c6a7da8e-3471-b7c2-2090-c1de7c334a4e" style="opacity:0" alt="" class="side_dish_salt" />
                     </div>
                     <div>
-                        <h3 class="h3">Side Dishes</h3>
-                        <p class="paragraph max_w_300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum </p>
+                        <h3 class="h3">Main Dishes (Lunch and Dinner)</h3>
+                        <p class="paragraph max_w_300px">
+                            These dishes are served with a choice of rice, spaghetti, chips, chapatis, roast potatoes, ugali or salad.
+                            @include('menus.main_dishes')
+                        </p>
                         <p>
                             <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
                             <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
@@ -103,8 +120,11 @@
                         </p>
                     </div>
                     <div id="w-node-c1de7c334a54-677eebb4" class="div-block-3">
-                        <h3 class="h3">Desserts</h3>
-                        <p class="paragraph max_w_300px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius </p>
+                        <h3 class="h3">Pastries</h3>
+                        <p class="paragraph max_w_300px">
+                            We have something for all our cake lovers.
+                            @include('menus.cakes')
+                        </p>
                         <p>
                             <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
                             <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
@@ -127,7 +147,10 @@
                         <div class="card_content">
                             <h3 class="h3">Discover</h3>
                             <h2 class="h2 dark_h2">We Also Offer Catering.</h2>
-                            <p class="paragraph dark_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                            <p class="paragraph dark_p">
+                                We also offer both indoor and outdoor catering services, home or private events, weddings, corporate functions and cocktail events.
+                                We cover both within Nairobi as well as outside.
+                            </p>
                             {{-- <a href="events.html" class="text_link">See Our Upcoming Events <span class="arrow">↠</span></a> --}}
                             <div class="card_right_images_contain"></div>
                             <img src="{{asset('tanager/images/scattered_salt.png')}}" width="353" data-w-id="c245d659-15d3-7e26-d554-aaf8c6fb344c" style="opacity:0" alt="" class="bg_salt_image upcoming_events_card bottom_salt" />
@@ -141,7 +164,9 @@
             <div class="wrapper flex_vertical_center">
                 <h3 class="h3">Enjoy</h3>
                 <h2 class="h2">Our High Quality Ingredients</h2>
-                <p class="paragraph centered_p max_w_600px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum.</p>
+                <p class="paragraph centered_p max_w_600px">
+                    We endeavour prepare our meals using natural, fresh and healthy food ingredients to ensure quality.
+                </p>
                 <div class="ingredients_image_wrap">
                     <div class="left_side_ingredients">
                         <img src="{{asset('tanager/images/soy.png')}}" width="110" sizes="(max-width: 479px) 21vw, (max-width: 767px) 66px, 110px" alt="" class="ingredient_soy" />
