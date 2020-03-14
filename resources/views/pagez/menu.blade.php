@@ -40,7 +40,7 @@
                                             <div class="menu_item_name">{{$menu->title}} <small>(single)</small></div>
                                             <div class="menu_price">Kshs{{$menu->price}}</div>
                                         </div>
-                                        <div><i>( Take away: +Ksh 20)</i></div>
+                                        <div class="menu_price"><i><small>( Take away: +Ksh 20)</small></i></div>
                                         <div class="menu_item_description max_w_400px">
                                             {!!$menu->description!!}
                                         </div>
