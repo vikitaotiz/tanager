@@ -1,6 +1,6 @@
 <ul style="color: #fff;">
     <li><strong>Marble, Vanilla, Carrot, Red velvet, Black and White forest,
-        Chocolate, Lemon, Oranges, Banana, Blueberries and Brain (Cakes): </strong>from Kshs 500</li>
+        Chocolate, Lemon, Oranges, Banana, Blueberries and Brain (Cakes): </strong>from Kshs 230</li>
     <li><strong>Meet pie : </strong>Kshs 200</li>
     <li><strong>Chicken pie : </strong>Kshs 200</li>
     <li><strong>Cheese pie : </strong>Kshs 200</li>
