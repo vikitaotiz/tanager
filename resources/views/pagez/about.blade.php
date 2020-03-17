@@ -3,9 +3,18 @@
     <div class="section about_hero">
         <div class="wrapper about_wrapper">
             <h1 class="h1">About Us</h1>
-            <p class="paragraph about-us-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            <p class="paragraph about-us-p">
+
+                Tanager offers an amazing mix of both local and international cuisines at affordable prices. We also provide a nice dining experience accompanied by our professional service delivery.
+                We are perfect for your casual rendezvous, birthday parties, corporate events and even when sharing that special moment with your loved one.
+
                 <br/>
-                <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                <br/>
+
+                We have extremely flexible menu. Tell us what you would like to have and we will make it just the way you like it. We make sure your food is tasty, fresh and of high quality to your health.
+                We believe in nothing but the best for our customers. We are proud of you, thank you so much for your continued business. We are also open to ideas, critism, complains and suggestions.
+                If you have any issue, kindly feel free to contact us through our mobile number or email and we will get back to you as soon as possible.
+
                 <br/>
         </div>
     </div>
