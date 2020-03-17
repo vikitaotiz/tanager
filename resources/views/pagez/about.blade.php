@@ -11,7 +11,7 @@
                 <br/>
                 <br/>
 
-                We have extremely flexible menu. Tell us what you would like to have and we will make it just the way you like it. We make sure your food is tasty, fresh and of high quality to your health.
+                We have extremely flexible menu. Tell us what you would like to have and we will make it just the way you like it. We make sure your food is tasty, fresh and of high value to your health.
                 We believe in nothing but the best for our customers. We are proud of you, thank you so much for your continued business. We are also open to ideas, critism, complains and suggestions.
                 If you have any issue, kindly feel free to contact us through our mobile number or email and we will get back to you as soon as possible.
 
