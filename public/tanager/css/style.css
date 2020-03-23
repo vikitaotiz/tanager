@@ -6581,7 +6581,7 @@ textarea.w-select {
   justify-content: space-between;
   border-style: solid;
   border-color: #ab8d69;
-  background-color: #ab8d69;
+  /* background-color: #ab8d69; */
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.02);
   color: #000;
 }
@@ -7542,7 +7542,7 @@ textarea.w-select {
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-    background-color: #000;
+    /* background-color: #000; */
   }
   .menu_nav_link {
     margin: 12px 24px 0px;
@@ -7703,7 +7703,7 @@ textarea.w-select {
     -ms-flex-align: center;
     align-items: center;
     /* background-color: transparent; */
-    background-color: #AB8D69;
+    /* background-color: #AB8D69; */
   }
   .menu_links_wrap {
     -webkit-box-orient: horizontal;
