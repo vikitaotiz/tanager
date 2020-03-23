@@ -1,4 +1,4 @@
-<ul style="color: #fff;">
+<ul style="color: #000;">
     <li><strong>Marble, Vanilla, Carrot, Red velvet, Black and White forest,
         Chocolate, Lemon, Oranges, Banana, Blueberries and Brain (Cakes): </strong>from Kshs 230</li>
     <li><strong>Meet pie : </strong>Kshs 200</li>

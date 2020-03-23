@@ -1,5 +1,5 @@
 It's finger-licking good!!!
-<table class="table table-sm table-bordered text-white">
+<table class="table table-sm table-bordered text-dark">
     <thead>
         <th>Pizzas</th>
         <th>Small</th>

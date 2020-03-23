@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="menu_contain">
 
                 @if ($categorymenus->count() > 0)
@@ -28,7 +28,7 @@
                             <hr>
                             <div class="w-layout-grid menu_grid">
                             @if ($category->menus->count() > 0)
-                                @foreach ($category->menus as $menu)
+                                @foreach ($category->menus()->paginate(3) as $menu)
                                     <div class="menu_item" style="border:1px solid #AB8D69; padding: 2%; border-radius: 3px;">
                                         <div>
                                             @if ($menu->image)
@@ -42,13 +42,13 @@
                                             <div class="menu_price"><u>Kshs{{$menu->price}}</u></div>
                                         </div>
                                         <div class="menu_price"><i><small>( Take away: +Ksh 20)</small></i></div>
-                                        <div class="menu_item_description max_w_400px">
+                                        <div class="menu_item_description max_w_400px" style="color: #000;">
                                             {!!$menu->description!!}
                                         </div>
                                         <div>
                                             <p>
-                                                <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
-                                                <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                                                <a href="tel:{{env('APP_PHONE')}}" class="btn" style="background-color: #AB8D69; color: #fff;">Order Now &#9742;</a>
+                                                <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="btn" style="background-color: #AB8D69; color: #fff;">
                                                     <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
                                                 </a>
                                             </p>

@@ -10,8 +10,8 @@
                            @include('menus.burgers')
                         </p>
                         <p>
-                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
-                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                            <a href="tel:{{env('APP_PHONE')}}" class="btn " style="background-color: #AB8D69; color: #fff; ">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="btn " style="background-color: #AB8D69; color: #fff; ">
                                 <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
                             </a>
                         </p>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper">
+            <div class="wrapper" style="background-color: #ffffe6; padding: 1%;">
                 <div class="w-layout-grid discover_menu_grid">
                     <div id="w-node-c1de7c334a31-677eebb4">
                         <h3 class="h3 align_right">Review</h3>
@@ -76,8 +76,8 @@
                            @include('menus.pizzas')
                         </p>
                         <p>
-                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
-                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                            <a href="tel:{{env('APP_PHONE')}}" class="btn " style="background-color: #AB8D69; color: #fff; ">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="btn " style="background-color: #AB8D69; color: #fff; ">
                                 <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
                             </a>
                         </p>
@@ -90,8 +90,8 @@
                             @include('menus.somali_taste')
                         </p>
                         <p>
-                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
-                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                            <a href="tel:{{env('APP_PHONE')}}" class="btn" style="background-color: #AB8D69; color: #fff; ">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="btn " style="background-color: #AB8D69; color: #fff; ">
                                 <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
                             </a>
                         </p>
@@ -113,8 +113,8 @@
                             @include('menus.main_dishes')
                         </p>
                         <p>
-                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
-                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                            <a href="tel:{{env('APP_PHONE')}}" class="btn " style="background-color: #AB8D69; color: #fff; ">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="btn " style="background-color: #AB8D69; color: #fff; ">
                                 <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
                             </a>
                         </p>
@@ -126,8 +126,8 @@
                             @include('menus.cakes')
                         </p>
                         <p>
-                            <a href="tel:{{env('APP_PHONE')}}" class="button w-button">Order Now &#9742;</a>
-                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="button w-button">
+                            <a href="tel:{{env('APP_PHONE')}}" class="btn " style="background-color: #AB8D69; color: #fff; ">Order Now &#9742;</a>
+                            <a href="https://api.whatsapp.com/send?phone={{env('APP_WHATSAPP')}}" target="_blank" class="btn " style="background-color: #AB8D69; color: #fff; ">
                                 <img src="{{asset('tanager/images/whatsapp.png')}}" width="15" alt="" />
                             </a>
                         </p>

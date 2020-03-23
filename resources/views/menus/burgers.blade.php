@@ -1,6 +1,6 @@
 Welcome to <i>Tanager</i> restaurant. We make it just the way you like it.
 <h3 class="h3">Burgers </h3>
-<ol style="color: #fff;">
+<ol style="color: #000;">
     <li><strong>Beef Burger : </strong>Kshs 450</li>
     <li><strong>Beef and Cheese Burger : </strong>Kshs 550</li>
     <li><strong>Beef, Cheese and Mushroom Burger : </strong>Kshs 550</li>

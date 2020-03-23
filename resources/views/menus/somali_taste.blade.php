@@ -1,4 +1,4 @@
-<ul style="color: #fff;">
+<ul style="color: #000;">
     <li><strong>Arrosto plain : </strong>Kshs 500</li>
     <li><strong>Dailo plain : </strong>Kshs 600</li>
     <li><strong>Esbesso plain <sup>1</sup>&frasl;<sub>4</sub> : </strong>Kshs 250</li>

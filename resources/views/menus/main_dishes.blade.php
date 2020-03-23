@@ -1,4 +1,4 @@
-<ul style="color: #fff; list-style-type:square;">
+<ul style="color: #000; list-style-type:square;">
     <h4 style="color: #AB8D69;">Chicken</h4>
     <li><strong>Chicken stew : </strong>Kshs 600</li>
     <li><strong>Chicken curry : </strong>Kshs 550</li>
